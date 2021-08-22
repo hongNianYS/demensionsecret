@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from './component/Navigator/header';
+import Footer from './component/Navigator/footer';
+import Background from './imgs/YASUO.jpg'
 function App() {
+  const background={
+    backgroundImage:`url(${Background})`,
+    height:'100vh'
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={background}>
+      <Header />
+      <Footer />
     </div>
   );
 }
